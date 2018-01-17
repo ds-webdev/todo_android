@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/task_name_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="18dp"
+                android:text="@string/task_name" />
+
+            <EditText
+                android:id="@+id/task_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/task_name_view"
+                android:layout_alignStart="@+id/task_name_view"
+                android:layout_below="@+id/task_name_view"
+                android:layout_marginTop="14dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/task_priority_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/task_name"
+                android:layout_alignStart="@+id/task_name"
+                android:layout_below="@+id/task_name"
+                android:layout_marginTop="30dp"
+                android:text="@string/task_priority" />
+
+            <RadioGroup
+                android:id="@+id/priority_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/task_priority_view"
+                android:layout_marginLeft="29dp">
+
+                <RadioButton
+                    android:id="@+id/normal_priority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/normal" />
+
+                <RadioButton
+                    android:id="@+id/hight_priority"
+                    android:layout_width="254dp"
+                    android:layout_height="46dp"
+                    android:layout_weight="1"
+                    android:text="@string/hight" />
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/desc_task_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/priority_radio_group"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/desc_task" />
+
+            <EditText
+                android:id="@+id/desc_task"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_task_view"
+                android:layout_marginLeft="29dp"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/errorMsg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc_task"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/color_error"
+                android:layout_marginTop="19dp" />
+
+            <Button
+                android:id="@+id/save_task"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/errorMsg"
+                android:layout_marginLeft="29dp"
+                android:onClick="updateTask"
+                android:text="@string/save_task" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.widget.RelativeLayout>

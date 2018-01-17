@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/task_name_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/task_name"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/task_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_name"
+                android:layout_toRightOf="@id/task_name_view"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/task_status_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_name_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/task_status"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/task_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_status"
+                android:layout_toRightOf="@id/task_status_view"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/task_name"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/task_priority_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_status_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/task_priority"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/task_priority"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/task_priority"
+                android:layout_toRightOf="@id/task_priority_view"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/task_status"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/task_create_date_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_priority_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/create_date_task"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/task_create_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_date_task"
+                android:layout_toRightOf="@id/task_create_date_view"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/task_priority"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/task_end_date_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_create_date_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/end_date_task"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/task_end_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/end_date_task"
+                android:layout_toRightOf="@id/task_end_date_view"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/task_create_date"
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/task_desc_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/task_end_date_view"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="25dp"
+                android:text="@string/desc_task"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/task_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/desc_task"
+                android:layout_toRightOf="@id/task_desc_view"
+                android:layout_marginTop="25dp"
+                android:layout_below="@id/task_end_date"
+                android:layout_marginLeft="5dp"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</android.widget.RelativeLayout>

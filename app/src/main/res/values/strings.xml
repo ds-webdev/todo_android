@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Todo App</string>
+    <string name="task_name">Task name: </string>
+    <string name="task_status">Status: </string>
+    <string name="end_date">Task end date</string>
+    <string name="task_priority">Priority: </string>
+    <string name="hight">Hight</string>
+    <string name="normal">Normal</string>
+    <string name="new_task_status">New</string>
+    <string name="done_task_status">Done</string>
+    <string name="in_progress_task_status">In progress</string>
+    <string name="desc_task">Description: </string>
+    <string name="create_date_task">Create date: </string>
+    <string name="end_date_task">End date: </string>
+    <string name="back">Back</string>
+    <string name="save_task">Save</string>
+    <string name="task_new">New</string>
+</resources>

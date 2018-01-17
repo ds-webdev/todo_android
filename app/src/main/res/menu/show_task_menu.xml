@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btn_done"
+        android:title="Change to done" />
+    <item android:title="Change to In progress"
+        android:id="@+id/btn_in_progress"/>
+    <item android:title="Edit task"
+        android:id="@+id/btn_edit_task"/>
+    <item android:title="Delete task"
+        android:id="@+id/btn_delete_task"/>
+</menu>
